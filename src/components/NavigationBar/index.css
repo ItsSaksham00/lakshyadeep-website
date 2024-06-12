@@ -1,0 +1,279 @@
+.NavToggle{
+    position: fixed;
+    top: 1.2rem;
+    right: 1.22rem;
+    height: 50px;
+    width: 50px;
+    background-color: tomato;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    z-index: 99999;
+}
+.ToggleBtn{
+    font-size: 2.2rem;
+    color: white;
+    transition: all .3s ease;
+}
+.navigation-container{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    background-color: #242424;
+    transition: all 0.5s ease;
+    left: -50rem;
+
+}
+.opened-nav-container{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    background-color: #242424;
+    transition: all 0.5s ease;
+    left: 0rem;
+}
+.upperBar{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column-reverse;
+    background-color: transparent;
+}
+.writtenInfo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+}
+.text-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.textIcon{
+    color: tomato;
+    font-size: 1.1rem;
+}
+.text-info p{
+    color: white;
+    font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    font-size: .85rem;
+    font-weight: 500;
+}
+.socialHandles{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.socialBoxes{
+    height: 36px;
+    width: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(67, 67, 67, 0.646);
+    border-radius: 3px;
+}
+.socialIcons{
+    font-size: 1.1rem;
+    color: white;
+}
+.firstSocialIcon{
+    background-color: tomato;
+}
+.lowerBar{
+    height: 75%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: transparent;
+}
+.ld-image-container{
+    width: 8rem;
+    display: flex;
+}
+.ld-image-container img{
+    width: 100%;
+    object-fit: cover;
+}
+.donateBtn{
+    height: 2.5rem;
+    width: 8rem;
+    background-color: tomato;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.donateBtnLink{
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: white;
+    font-family: poppins;
+}
+.lowerBar nav{
+    display: flex;
+    gap: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    margin-bottom: 3%;
+    margin-top: -5%;
+}
+.lowerBar .NavBtns {
+    color: rgb(189, 189, 189);
+    text-decoration: none;
+    font-family: poppins;
+    height: 32px;
+    width: 120px;
+    transition: all 0.2s;
+
+
+}
+.lowerBar .NavBtns:hover{
+    color: whitesmoke;
+    /* scale: 1.09; */
+
+}
+.lowerBar .NavBtns div h4{
+    font-weight: 400;
+    
+}
+.NavBtnText{
+    padding-bottom: 5px;
+    width: 100%;
+    border-bottom: 1px solid rgb(103, 103, 103);
+}
+.NavBtns.active{
+    color: whitesmoke;
+    font-weight: 900;
+}
+
+@media only screen and (min-width: 750px){
+
+        .NavToggle{
+            display: none;
+        }
+
+        .navigation-container{
+            position: fixed;
+            top: 0;
+            left: 0rem;
+            width: 100%;
+            height: fit-content;
+           /* background-color: blue; */
+           flex-direction: column;
+
+        }
+        .upperBar{
+            height: 3.2rem;
+            flex-direction: row;
+            justify-content: space-around;
+            background-color: #242424;
+        }
+        .socialBoxes{
+            height: 35px;
+            width: 35px;
+            transition: all .3s ease;
+        }
+        .socialBoxes:hover{
+            background-color: tomato;
+            scale: 1.08;
+        }
+        .socialIcons{
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        .text-info p{
+            font-size: .85rem;
+            font-weight: 600;
+        }
+        .textIcon{
+            font-size: 1rem;
+        }
+        .text-info {
+            gap: 10px;
+        }
+        .lowerBar{
+            width: 100%;
+            height: 6rem;
+            flex-direction: row;
+            background-color: rgb(72, 72, 72);
+        }
+        .ld-image-container{
+            display: flex;
+            width: 10rem;
+        }
+            .lowerBar nav{
+                 height: 100%;
+                 flex-direction: row;
+                 justify-content: space-around;
+                 gap: 1rem;
+                 margin-bottom: 0;
+                 margin-top: 0;
+                 padding: 0rem 2rem;
+                 flex-wrap: wrap;
+             
+            }
+            .NavBtns{
+                height: 100%;
+                text-align: center;
+                width: 70px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                
+            } 
+            .NavBtns.active::before{
+                content: '';
+                position: absolute;
+                bottom: -.8rem;
+                height: 5px;
+                width: 100%;
+                background-color: tomato;
+                border-radius: 3px;
+            }
+            
+            .NavBtnText{
+                padding-right: 10px;
+                width: 100%;
+                border-right: 1px solid rgb(103, 103, 103); 
+                border-bottom:none;
+            }
+            .lastChild{
+                border: none;
+            }
+.lowerBar .NavBtns div h4{
+            font-size: 1.1rem;
+}
+.donateBtn{
+    height: 3rem;
+    width: 9rem;
+}
+
+
+}
+
+@media only screen and (max-width: 890px){
+    .NavBtns {
+        width: 100%;
+    }
+}
