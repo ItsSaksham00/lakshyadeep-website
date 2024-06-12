@@ -54,7 +54,7 @@ const NavigationBar = () => {
 
                         <div className="socialHandles">
                                 <div className="socialBoxes firstSocialIcon">
-                                    <a href="#">
+                                    <a href="https://www.facebook.com/lakshyadeep.eca">
                                         <FontAwesomeIcon icon={faFacebookF} className='socialIcons'/>
                                     </a> 
                                 </div>
@@ -143,7 +143,7 @@ const NavigationBar = () => {
 
                 <div className="socialHandles">
                         <div className="socialBoxes firstSocialIcon">
-                            <a href="#">
+                            <a href="https://www.facebook.com/lakshyadeep.eca">
                                 <FontAwesomeIcon icon={faFacebookF} className='socialIcons'/>
                             </a> 
                         </div>
