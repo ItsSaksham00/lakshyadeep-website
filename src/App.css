@@ -3,3 +3,7 @@
 #root {
   text-align: center;
 }
+::selection{
+  background-color: tomato;
+  color: white;
+}

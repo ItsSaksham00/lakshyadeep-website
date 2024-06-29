@@ -92,19 +92,19 @@ const NavigationBar = () => {
                                                 <div className='NavBtnText'><h4>Home</h4></div>
                                             </NavLink>   
 
-                                            <NavLink exact="true" activeclassname="active" className='NavBtns' to='/AboutMe'> 
+                                            <NavLink exact="true" activeclassname="active" className='NavBtns' to='/AboutUs'> 
                                                 <div className='NavBtnText'><h4>About Us</h4></div>
                                             </NavLink>   
 
-                                            <NavLink exact="true" activeclassname="active   " className='NavBtns' to='/Portfolio'> 
+                                            <NavLink exact="true" activeclassname="active   " className='NavBtns' to='/Events'> 
                                                 <div className='NavBtnText'><h4>Events</h4></div>
                                             </NavLink>   
 
-                                            <NavLink exact="true" activeclassname="active" className='NavBtns' to='/ContactMe'> 
+                                            <NavLink exact="true" activeclassname="active" className='NavBtns' to='/OurFeatures'> 
                                                 <div className='NavBtnText'><h4>Features</h4></div>
                                             </NavLink>   
                                             
-                                            <NavLink exact="true" activeclassname="active" className='NavBtns' to='/ContactMe'> 
+                                            <NavLink exact="true" activeclassname="active" className='NavBtns' to='/OurTeam'> 
                                                 <div className='NavBtnText'><h4>Team</h4></div>
                                             </NavLink>   
 
@@ -177,29 +177,29 @@ const NavigationBar = () => {
                             </div>
     
                             <nav>
-                                            <NavLink exact="true" activeclassname="active" className='NavBtns' to='/'> 
+                            <NavLink onClick={toggleOfNavbar} exact="true" activeclassname="active" className='NavBtns' to='/'> 
                                                 <div className='NavBtnText'><h4>Home</h4></div>
                                             </NavLink>   
 
-                                            <NavLink exact="true" activeclassname="active" className='NavBtns' to='/AboutMe'> 
+                                            <NavLink onClick={toggleOfNavbar} exact="true" activeclassname="active" className='NavBtns' to='/AboutUs'> 
                                                 <div className='NavBtnText'><h4>About Us</h4></div>
                                             </NavLink>   
 
-                                            <NavLink exact="true" activeclassname="active   " className='NavBtns' to='/Portfolio'> 
+                                            <NavLink onClick={toggleOfNavbar} exact="true" activeclassname="active   " className='NavBtns' to='/Events'> 
                                                 <div className='NavBtnText'><h4>Events</h4></div>
                                             </NavLink>   
 
-                                            <NavLink exact="true" activeclassname="active" className='NavBtns' to='/ContactMe'> 
+                                            <NavLink onClick={toggleOfNavbar} exact="true" activeclassname="active" className='NavBtns' to='/OurFeatures'> 
                                                 <div className='NavBtnText'><h4>Features</h4></div>
                                             </NavLink>   
                                             
-                                            <NavLink exact="true" activeclassname="active" className='NavBtns' to='/ContactMe'> 
+                                            <NavLink onClick={toggleOfNavbar} exact="true" activeclassname="active" className='NavBtns' to='/OurTeam'> 
                                                 <div className='NavBtnText'><h4>Team</h4></div>
                                             </NavLink>   
 
-                                            <NavLink exact="true" activeclassname="active" className='NavBtns' to='/ContactMe'> 
+                                            <NavLink onClick={toggleOfNavbar} exact="true" activeclassname="active" className='NavBtns' to='/ContactMe'> 
                                                 <div className='NavBtnText lastChild'><h4>Contact</h4></div>
-                                            </NavLink>   
+                                            </NavLink>  
                                      </nav>
     
                             

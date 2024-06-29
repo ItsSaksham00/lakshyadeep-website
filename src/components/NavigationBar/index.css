@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 3px;
-    z-index: 99999;
+    z-index: 999999;
 }
 .ToggleBtn{
     font-size: 2.2rem;
@@ -27,19 +27,22 @@
     background-color: #242424;
     transition: all 0.5s ease;
     left: -50rem;
-
-}
-.opened-nav-container{
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column-reverse;
-    background-color: #242424;
-    transition: all 0.5s ease;
-    left: 0rem;
+    z-index: 9999;
+    
+    
+    }
+    .opened-nav-container{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+        background-color: #242424;
+        transition: all 0.5s ease;
+        left: 0rem;
+        z-index: 9999;
 }
 .upperBar{
     height: 25%;
@@ -142,14 +145,13 @@
     text-decoration: none;
     font-family: poppins;
     height: 32px;
-    width: 120px;
+    width: 100px;
     transition: all 0.2s;
 
 
 }
 .lowerBar .NavBtns:hover{
     color: whitesmoke;
-    /* scale: 1.09; */
 
 }
 .lowerBar .NavBtns div h4{
@@ -166,7 +168,7 @@
     font-weight: 900;
 }
 
-@media only screen and (min-width: 750px){
+@media only screen and (min-width: 760px){
 
         .NavToggle{
             display: none;

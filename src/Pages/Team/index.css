@@ -1,0 +1,123 @@
+.team-container{
+    min-height: 70svh;
+    width: 100%;
+    background-image: linear-gradient(
+        rgba(4,9,30,.7),rgba(4,9,30,.7)), url(../../assets/images/teamBgImg.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 9rem;
+        text-wrap: wrap;
+   
+}
+.team-container h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3.5rem;
+    color: white;
+}
+.team-container h1 span{
+    color: tomato;
+}
+.team-container p{
+    font-family: poppins;
+    width: 520px;
+    padding: 1rem;
+    /* background-color: red; */
+    color: white;
+    font-family: 1.1rem;
+
+}
+.team-info-holder{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-bottom: 5%;
+    background-color: rgba(0, 0, 0, 0.11);
+}
+.teamBox{
+    width: 400px;
+    height: 420px;
+    border-radius: 10px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+.teamBox img{
+    height: 130px;
+    width: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.teamBox h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    color: tomato;
+}
+.teamBox p{
+    width: 100%;
+    font-family: poppins;
+    padding: 0 10%;
+    font-size: .9rem;
+}
+.boxFoot{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+.boxFoot h3{
+    font-family: poppins;
+    font-size: .9rem;
+}
+.teamLink{
+    text-decoration: none;
+    height: 36px;
+    width: 36px;
+    background-color: tomato;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color: white;
+}
+@media only screen and (max-width: 760px){
+    .team-container{
+        min-height: 60svh;
+        margin-top: 0;
+    }
+    .team-container h1{
+        font-size: 2.7rem;
+    }
+    .team-container p{
+        padding: 1rem 2rem;
+        width: auto;
+        font-size: 0.8rem;
+    }
+    
+}
+
+@media only screen and (max-width: 500px) {
+    .teamBox{
+        width: 380px;
+    }
+
+.teamBox img{
+    height: 120px;
+    width: 120px;   
+}
+.teamBox p{
+    font-size: .8rem;   
+}
+}
